@@ -28,7 +28,7 @@ module ResourcePathHelper
 
     path = resource_path(resource)
 
-    link_to t('.destroy', :default => t('helpers.links.destroy')), path, :method => :delete,
+    button_to t('.destroy', :default => t('helpers.links.destroy')), path, :method => :delete,
               :data => { :confirm => t('.confirm', :default => t('helpers.links.confirm', :default => 'Are you sure?')) },
               :class => klasses
   end
