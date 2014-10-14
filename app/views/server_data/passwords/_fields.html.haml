@@ -22,6 +22,7 @@
         %td
           - begin
             = f.text_field :password
+            = link_to_generate_password "generate", f
           - rescue OpenSSL::Cipher::CipherError => e
             = e.inspect
       %tr
